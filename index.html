@@ -1,244 +1,835 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Sky Town Studio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<style>
-.gywm { width:auto;
-        height:430px;
-        background: url(../images/gywm-bg.png) no-repeat center 0;
-        color:#fff;
-}
-.gywm-con { width:1160px;
-			margin: 0 auto;
-}
-.gywm h3 {
-        font-size:36px;
-        padding-top:40px;
-        font-weight: normal;
-}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-.gywm p {
-        font-size:18px;
-        padding-top:35px;
-        width:450px;
-        line-height:37px;
-}
-.gywm span {
-        font-size:24px;
-        padding-top:235px;
-        line-height:90px;
-        color:#333;
-padding-left: 30px;
-}
-.gywm img {
-       padding-top:35px;
-}
-.backed{
-	background-size:auto 1500px;
-	}
-.highlight table td{padding:5px}.highlight table pre{margin:0}.highlight .cm{color:#777772;font-style:italic}.highlight .cp{color:#797676;font-weight:bold}.highlight .c1{color:#777772;font-style:italic}.highlight .cs{color:#797676;font-weight:bold;font-style:italic}.highlight .c,.highlight .cd{color:#777772;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .gd{color:#000000;background-color:#ffdddd}.highlight .ge{color:#000000;font-style:italic}.highlight .gr{color:#aa0000}.highlight .gh{color:#797676}.highlight .gi{color:#000000;background-color:#ddffdd}.highlight .go{color:#888888}.highlight .gp{color:#555555}.highlight .gs{font-weight:bold}.highlight .gu{color:#aaaaaa}.highlight .gt{color:#aa0000}.highlight .kc{color:#000000;font-weight:bold}.highlight .kd{color:#000000;font-weight:bold}.highlight .kn{color:#000000;font-weight:bold}.highlight .kp{color:#000000;font-weight:bold}.highlight .kr{color:#000000;font-weight:bold}.highlight .kt{color:#445588;font-weight:bold}.highlight .k,.highlight .kv{color:#000000;font-weight:bold}.highlight .mf{color:#009999}.highlight .mh{color:#009999}.highlight .il{color:#009999}.highlight .mi{color:#009999}.highlight .mo{color:#009999}.highlight .m,.highlight .mb,.highlight .mx{color:#009999}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .bp{color:#797676}.highlight .nb{color:#0086B3}.highlight .nc{color:#445588;font-weight:bold}.highlight .no{color:#008080}.highlight .nd{color:#3c5d5d;font-weight:bold}.highlight .ni{color:#800080}.highlight .ne{color:#990000;font-weight:bold}.highlight .nf{color:#990000;font-weight:bold}.highlight .nl{color:#990000;font-weight:bold}.highlight .nn{color:#555555}.highlight .nt{color:#000080}.highlight .vc{color:#008080}.highlight .vg{color:#008080}.highlight .vi{color:#008080}.highlight .nv{color:#008080}.highlight .ow{color:#000000;font-weight:bold}.highlight .o{color:#000000;font-weight:bold}.highlight .w{color:#bbbbbb}.highlight{background-color:#f8f8f8}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}body{box-sizing:border-box;color:#373737;background:#212121;font-size:16px;font-family:'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{margin:10px 0;font-weight:700;color:#222222;font-family:'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;letter-spacing:-1px}h1{font-size:36px;font-weight:700}h2{padding-bottom:10px;font-size:32px;background:url("../images/bg_hr.png") repeat-x bottom}h3{font-size:24px}h4{font-size:21px}h5{font-size:18px}h6{font-size:16px}p{margin:10px 0 15px 0}footer p{color:#f2f2f2}a{text-decoration:none;color:#0F79D0;text-shadow:none;transition:color 0.5s ease;transition:text-shadow 0.5s ease;-webkit-transition:color 0.5s ease;-webkit-transition:text-shadow 0.5s ease;-moz-transition:color 0.5s ease;-moz-transition:text-shadow 0.5s ease;-o-transition:color 0.5s ease;-o-transition:text-shadow 0.5s ease;-ms-transition:color 0.5s ease;-ms-transition:text-shadow 0.5s ease}a:hover,a:focus{text-decoration:underline}footer a{color:#F2F2F2;text-decoration:underline}em,cite{font-style:italic}strong{font-weight:bold}img{position:relative;margin:0 auto;max-width:739px;padding:5px;margin:10px 0 10px 0;border:1px solid #ebebeb;box-shadow:0 0 5px #ebebeb;-webkit-box-shadow:0 0 5px #ebebeb;-moz-box-shadow:0 0 5px #ebebeb;-o-box-shadow:0 0 5px #ebebeb;-ms-box-shadow:0 0 5px #ebebeb}p img{display:inline;margin:0;padding:0;vertical-align:middle;text-align:center;border:none}pre,code{color:#222;background-color:#fff;font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;font-size:0.875em;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px}pre{padding:10px;box-shadow:0 0 10px rgba(0,0,0,0.1);overflow:auto}code{padding:3px;margin:0 3px;box-shadow:0 0 10px rgba(0,0,0,0.1)}pre code{display:block;box-shadow:none}blockquote{color:#666;margin-bottom:20px;padding:0 0 0 20px;border-left:3px solid #bbb}ul,ol,dl{margin-bottom:15px}ul{list-style-position:inside;list-style:disc;padding-left:20px}ol{list-style-position:inside;list-style:decimal;padding-left:20px}dl dt{font-weight:bold}dl dd{padding-left:20px;font-style:italic}dl p{padding-left:20px;font-style:italic}hr{height:1px;margin-bottom:5px;border:none;background:url("../images/bg_hr.png") repeat-x center}table{border:1px solid #373737;margin-bottom:20px;text-align:left}th{font-family:'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;padding:10px;background:#373737;color:#fff}td{padding:10px;border:1px solid #373737}form{background:#f2f2f2;padding:20px}.outer{width:100%}.inner{position:relative;max-width:640px;padding:20px 10px;margin:0 auto}#forkme_banner{display:block;position:absolute;top:0;right:10px;z-index:10;padding:10px 50px 10px 10px;color:#fff;background:url("../images/blacktocat.png") #0090ff no-repeat 95% 50%;font-weight:700;box-shadow:0 0 10px rgba(0,0,0,0.5);border-bottom-left-radius:2px;border-bottom-right-radius:2px}#header_wrap{background:#212121;background:-moz-linear-gradient(top, #373737, #212121);background:-webkit-linear-gradient(top, #373737, #212121);background:-ms-linear-gradient(top, #373737, #212121);background:-o-linear-gradient(top, #373737, #212121);background:linear-gradient(to top, #373737, #212121)}#header_wrap .inner{padding:50px 10px 30px 10px}#project_title{margin:0;color:#fff;font-size:42px;font-weight:700;text-shadow:#111 0px 0px 10px}#project_tagline{color:#fff;font-size:24px;font-weight:300;background:none;text-shadow:#111 0px 0px 10px}#downloads{position:absolute;width:210px;z-index:10;bottom:-40px;right:0;height:70px;background:url("../images/icon_download.png") no-repeat 0% 90%}.zip_download_link{display:block;float:right;width:90px;height:70px;text-indent:-5000px;overflow:hidden;background:url(../images/sprite_download.png) no-repeat bottom left}.tar_download_link{display:block;float:right;width:90px;height:70px;text-indent:-5000px;overflow:hidden;background:url(../images/sprite_download.png) no-repeat bottom right;margin-left:10px}.zip_download_link:hover{background:url(../images/sprite_download.png) no-repeat top left}.tar_download_link:hover{background:url(../images/sprite_download.png) no-repeat top right}#main_content_wrap{background:#f2f2f2;border-top:1px solid #111;border-bottom:1px solid #111}#main_content{padding-top:40px}#footer_wrap{background:#212121}@media screen and (max-width: 992px){img{max-width:100%}}@media screen and (max-width: 480px){body{font-size:14px}#downloads{display:none}.inner{min-width:320px;max-width:480px}#project_title{font-size:32px}h1{font-size:28px}h2{font-size:24px}h3{font-size:21px}h4{font-size:18px}h5{font-size:14px}h6{font-size:12px}code,pre{font-size:11px}}@media screen and (max-width: 320px){body{font-size:14px}#downloads{display:none}.inner{min-width:240px;max-width:320px}#project_title{font-size:28px}h1{font-size:24px}h2{font-size:21px}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{font-size:12px}code,pre{min-width:240px;max-width:320px;font-size:11px}}
-.text{text-align:center;}
+  <title>Sky Town Studio</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
-</style>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
-<body background="backgroung.jpeg">
-<style>
-    .navbar .nav > li .dropdown-menu {margin: 0;}  
-    .navbar .nav > li:hover .dropdown-menu {display: block;}
-</style>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">天空之城工作室</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">作品</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">技术 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://town.flarum.cloud">交流论坛</a></li>
-            <li><a href="#">技术教程 / 博客</a></li>
-            <li><a href="#">资源社区</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">关于网站</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">支持</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+    <div class="container d-flex align-items-center">
+      <div class="contact-info mr-auto">
+        <ul>
+          <li><i class="icofont-envelope"></i><a href="mailto:contact@example.com">xhpt3485@sina.com</a></li>
+          <li><i class="icofont-clock-time icofont-flip-horizontal"></i>非工作日 9:00-21:00</li>
+        </ul>
+      </div>
+      <div class="cta">
+        <a href="#about" class="scrollto">加入我们</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="./index.html" class="scrollto">Sky town</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="#header" class="logo mr-auto scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="./index.html">主页</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#services">服务</a></li>
+          <li><a href="#portfolio">产品</a></li>
+          <li><a href="#team">团队</a></li>
+          <li><a href="#pricing">软件</a></li>
+          <li><a href="blog.html">帮助</a></li>
+          <li class="drop-down"><a href="">概览</a>
+            <ul>
+              <li><a href="#">Sky town OS</a></li>
+              <li class="drop-down"><a href="#">游戏</a>
+                <ul>
+                  <li><a href="#">缠斗：苍穹下</a></li>
+                  <li><a href="#">飞逝系列</a></li>
+                  <li><a href="#">滑稽跑酷</a></li>
+                  <li><a href="#">战团</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sky town Draw</a></li>
+              <li><a href="#">Sky town Cloud</a></li>
+              <li><a href="#">[合作产品]维度工具合集</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">联系我们</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">欢迎来到<span>Sky town</span></h2>
+          <p class="animated fadeInUp">在这里，你会找到许多有用的帮助，技术文档，资源，我们也欢迎任何人加入.</p>
+          <a href="#about" class="btn-get-started animated fadeInUp scrollto">查看更多</a>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="./data1.html">天空之城命令行工作站 个人版</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      </div>
 
-<header class="inner">
-          
-            <a id="forkme_banner" href="http://github.com/xhpt3485">查看我们的github</a>
-          
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">缠斗：苍穹下</h2>
+          <p class="animated fadeInUp">缠斗：联合舰队正统续作，即将于2020年10月发布，你准备好迎接挑战了吗？</p>
+          <a href="#about" class="btn-get-started animated fadeInUp scrollto">查看更多</a>
+        </div>
+      </div>
 
-          <h1 id="project_title">天空之城工作室</h1>
-          <h5 id="project_tagline">一家来自西瓜创客与A营的工作室</h5>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
 
-          
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/pages-themes/slate/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/pages-themes/slate/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-          
-        </header>
-		<div class="outer" id="main_content_wrap">
-      <section class="inner" id="main_content">
-	
-<div class="text">	
-	<h3> -简介- </h3>
-</div>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
 
-<p>我们Sky Town Studio是一个创立2年的工作室，成立的理念是“创新，自由，梦想”，成员来自世界各地的编程爱好者，主要开发各种程序，如python，C++,java等各种小程序以及用scratch，u3d开发物理引擎，大多数成果会放到github和各大编程交流平台展示</p>
-<p>我们同时也是一个无利益的工作室，其成员主要由10-15岁的青少年组成，希望大家可以多支持我们</p>
-
-<div class="text">
-	<img src="skytown logo.png" width="200px" height="200px">
-</div>
-
-<p style="text-align:center">这是我们的logo</p> 
-
-
-<div class="text">
-<h3 id="header-3"> -作品- </h3>
-</div>
-<p>作为一个成熟的团队，我们有着大量的算法和作品，目前列出下面的几个</p>
-
-<br>
-<li>半重力 （正在开发）</li>
-<li>STEP Home Engine 天空之城物理引擎 个人版</li>
-<li>STEP Enderprise Engine 天空之城物理引擎 企业版</li>
-<li><a href="./data1.html">STS Home commmand Workstation 天空之城命令行工作站 个人版</a></li>
-<li>STS Enderprise command Workstation 天空之城命令行工作站 企业版</li>
-<li>平台跳跃</li>
-</br>
-
-<h3 style="text-align:center">-合作-</h3>
-
-<p>
-我们希望合作，也欢迎和任何人合作，目前和我们合作的工作室很多，主要是
-</p>
-<br>
-<li style="text-align:left">异光工作室</li>
-<li style="text-align:left">微创工作室</li>
-<li style="text-align:left">galaxy工作室</li>
-<li style="text-align:left">维度工作室</li>
-<li style="text-align:left">星际工作室</li>
-</br>
-
-<a href="./blackdata.html">敌对的工作室黑名单</a>
-
-<h3 style="text-align:center" >工作室平均水平</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">语言</th>
-      <th style="text-align: left">是否会</th>
-      <th style="text-align: left">掌握的程度</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">scratch</td>
-      <td style="text-align: left">会</td>
-      <td style="text-align: left">完全掌握 100%</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">python</td>
-      <td style="text-align: left">会</td>
-      <td style="text-align: left">大多数人 90% （其中有美术部的不会）</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">c/c++</td>
-      <td style="text-align: left">会</td>
-      <td style="text-align: left">大多数人 80% （其中有美术部的不会）</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">html</td>
-      <td style="text-align: left">一半</td>
-      <td style="text-align: left">一半人 50% 左右 （主要集中在美术部，设计部）</td>
-    <tr>
-      <td style="text-align: left">java</td>
-      <td style="text-align: left">一半</td>
-      <td style="text-align: left">一半人 40% 左右 （主要集中在美术部，设计部，音效部）</td>
-    </tr>
-    </tr>
-  </tbody>
-</table>
-
-<p>另附，我们大多数主流软件都会，比如ps,ai,br等</p>
-
-<h3 style="text-align:center"> -加入我们- </h3>
-
-
-
-<video  width="500" height="389" controls="controls" style="text-align:center" >
-  <source src="movie.mp4" type="video/mp4">   
-Your browser does not support the video tag.   
-</video>
-
-<p> 目前还剩下的职位 </p>
-<p> 程序员 2 人 </p>
-<p> 美工师 2 人 </p>
-<p> 音效部 4 人 </p>
-
-<p> 要求会基本的程序，进来的要先考核 </p>
-
-
-
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><a href="https://jinshuju.net/f/DH8ToY" > 点击我报名参加 </a></code></pre></div></div>
-
-      </section>
     </div>
+  </section><!-- End Hero -->
 
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        
-        <p class="copyright">天空之城工作室 版权所有</p>
-        
-        <p>框架与技术支持来自<a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  <main id="main">
+
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">快速</a></h4>
+              <p class="description">我们的团队大多都有2年的编程经验，在我们的工作时间可以很快的完成任务</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">支持</a></h4>
+              <p class="description">我们有强大的资源运维，还有大量技术帮助文档，并免费对外开放至永久</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">高效</a></h4>
+              <p class="description">我们有一个成熟的团队，资料分级，管理部门，可以保证任务高效完成</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">多层</a></h4>
+              <p class="description">我们并不是一群人集中开发一个项目，而是让几个小项目进行，每个项目都有个负责人，分工明确</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Icon Boxes Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>关于</h2>
+        </div>
+
+        <div class="row content">
+            <div class="col-lg-6">
+                <p>我们Sky Town Studio是一个创立2年的工作室，成员来自世界各地的编程爱好者，主要开发各种程序，如python，C++,java等各种小程序以及用scratch，u3d开发物理引擎，大多数成果会放到github和各大编程交流平台展示</p>
+                <p>我们同时也是一个无利益的工作室，其成员主要由10-15岁的青少年组成，希望大家可以多支持我们</p>
+                <ul>
+                    <li><i class="ri-check-double-line"></i> 室长及部分成员有2年以上的大量经验</li>
+                    <li><i class="ri-check-double-line"></i> 由理事部和设计部编写的帮助文档</li>
+                    <li><i class="ri-check-double-line"></i> 成员的门槛是scratch+python（西瓜A1）</li>
+                </ul>
+            </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+            我们的所有作品都会避免版权纠纷，完全遵守CC BY NC SA 4.0安全协议开源（除部分防止作弊作品外），二次开发遵守MIT许可，在这里你可以尽情发挥想象，不用过多担心版权问题。
+            </p>
+            <a href="#" class="btn-learn-more">查看更多</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
 
     
-</body>
-</html>
 
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
+
+            <div class="content">
+              <h3>FAQ</h3>
+              <p>
+                这里可以解答你的疑问
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> 你们的实力如何？ <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                    <p>
+                      我们大部分成员不仅仅会使用VS来开发，同时也会使用unlty，cocos等物理引擎，部分成员也精通Ps，Ai，以及Rpi等硬件来开发。
+                    </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> 你们欢迎任何人合作吗？ <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      是的，只要不是在<a href="./black.html">Blacklist</a>里面的工作室，我们都会与他们进行合作交流的。
+                   </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> 你们主要经营什么业务？ <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      我们主要使用scratch，unity等制作游戏，同时也会使用c++,python等制作一些工具。
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>服务</h2>
+          <p>我们的主要业务范围</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i class="icofont-computer"></i>
+              <h4><a href="#">编写工具</a></h4>
+              <p>我们时不时会出品一些免费工具，免费供广大开发者使用，完全不收费</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="icofont-image"></i>
+              <h4><a href="#">素材设计</a></h4>
+              <p>我们提供各种各样的ui，全部免费开放给广大设计师，并欢迎与我们一起合作</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="icofont-earth"></i>
+              <h4><a href="#">游戏制作</a></h4>
+              <p>我们制作各种游戏，并免费对广大玩家开放，所有的游戏都不会内购</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="icofont-tasks-alt"></i>
+              <h4><a href="#">网站建设</a></h4>
+              <p>我们可以免费帮大家制作网站，包括上传到github page，目前的合作项目还有一个名额</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3>提出建议</h3>
+            <p> 欢迎大家向我们提出建议，来改进我们这个工作室，联系电邮xhpt3485@sina.com以提出建议与合作</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="mailto:xhpt3485@sina.com">立即联系</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfoio Section ======= -->
+    <section id="portfolio" class="portfoio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfoio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfoio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+
+          <div class="col-lg-5">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Anyar</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        Copyright &copy; 2020.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+      </div>
+      <div class="credits"></div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>
